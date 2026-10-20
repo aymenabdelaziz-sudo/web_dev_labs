@@ -1,0 +1,77 @@
+Lab 2 - Part B: content of the hackathon page
+=============================================
+Copy each text into the element you choose for it. The texts are given in
+the order in which they appear on the page. Nothing here tells you which
+element to use: that is your job. Special characters (dashes, copyright,
+middle dot) must be written as HTML entities in your page.
+
+Images (in images/):
+  logo.svg       displayed at 56 x 56 pixels    (write your own alt text)
+  hackathon.svg  displayed at 480 x 240 pixels  (write your own alt text)
+
+------------------------------------------------------------------ top
+ENSIA AI Club
+
+Home
+Events
+Members
+Contact
+
+Hackathon 2026: 48 Hours to Build Smarter Cities
+
+Published on October 12, 2026 by the AI Club team
+  (machine-readable date: 2026-10-12)
+
+Last year, 24 teams competed in the main hall.
+
+The AI Club invites all students to its annual hackathon. In teams of three
+to five, you will design a prototype that makes our cities cleaner, safer, or
+easier to live in. No prior experience is required: mentors will help you all
+weekend.
+  (AI = Artificial Intelligence)
+
+Programme
+
+Hackathon schedule, November 2026
+Day         | Time  | Activity                    | Room
+Friday 13   | 17:00 | Opening and team formation  | Amphi 1
+            | 18:30 | Coding starts               | Main Hall
+Saturday 14 | 10:00 | Mentor sessions             | Labs B1 to B4
+            | 21:00 | Pizza night                 | Cafeteria
+Sunday 15   | 14:00 | Demos and awards            | Amphi 1
+
+Prizes
+
+First place: a two-week internship at a partner company
+Second place: development boards for each team member
+Third place: online course vouchers
+
+Who can participate?
+
+All ENSIA students, from first to fifth year
+Teams must include:
+  at least one first- or second-year student
+  at most five members
+
+"We arrived with an idea on a napkin and left with a working prototype and new friends."
+
+-- Sara M., winner of the 2025 edition        (the dash is an em dash)
+
+Practical information
+
+Dates
+  November 13-15, 2026                        (the dash is an en dash)
+Venue
+  ENSIA, Sidi Abdellah, Algiers
+Registration fee
+  Free (places are limited to 30 teams)
+
+Register your team before November 6
+
+Related events
+
+Intro to Machine Learning workshop
+Robotics Club open day
+
+(c) 2026 ENSIA AI Club . aiclub@ensia.edu.dz   (copyright sign, middle dot)
+--------------------------------------------------------------- bottom
