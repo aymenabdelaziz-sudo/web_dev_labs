@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TechNova the best place for summer internships" />
+    <title>TechNova</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <form action="https://httpbin.org/get" method="get">
+            <search>
+                <label for="search_section">Search: </label>
+                <input id="search_section" type="search" name="q" placeholder="Search..." />
+                <button type="submit">Submit</button>
+            </search>
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <picture>
+                <source media="(min-width:800px)" srcset="media/banner-1280.jpg" />
+                <img src="media/banner-640.jpg" alt="banner with technova in bold and light blue stripe with a dark 
+                blue background" loading="lazy" />
+            </picture>
+        </section>
+
+        <section>
+            <video controls poster="media/poster.jpg" preload="metadata">
+                <source src="media/presentation.mp4" type="video/mp4" />
+                <source src="media/presentation.webm" type="video/webm" />
+                <track kind="captions" src="caption-en.vtt" srclang="en" label="English" default />
+                 If you can't see the presentation
+                <a href="media/presentation.mp4" download>Click Here</a> to download
+                it
+            </video>
+
+
+        </section>
+
+        <section>
+            <p>
+                <label for="places">Places taken: </label>
+                <meter id="places" value="18" min="0" max="30">18 of 30 places taken</meter>18 of 30 places taken
+                
+            </p>
+
+            <p>
+                <label for="campaign">Campaign: 40% elapsed </label>
+                <progress id="campaign" value="40" min="0" max="100"></progress>40%
+                 
+            </p>
+        </section>
+
+        <section>
+            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                <p>
+                    <label for="city">City: </label>
+                    <input type="serach" name="city" list="city_list" id="city" />
+                    <datalist id="city_list">
+                        <option value="Algiers">Algiers</option>
+                        <option value="Oran">Oran</option>
+                        <option value="Constantine">Constantine</option>
+                        <option value="Annaba">Annaba</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="specialty">Specialty:</label>
+                    <select id="specialty" name="specialty" required>
+                        <option value="" disabled selected>Select a specialty...</option>
+                        <optgroup label="Engineering">
+                            <option value="software">Software Engineering</option>
+                            <option value="data">Data Science</option>
+                        </optgroup>
+                        <optgroup label="Design">
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="graphic">Graphic Design</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+
+                <p>
+                    <label for="upload">Upload your file (PDF only): </label>
+                    <input type="file" name="file" id="upload" accept=".pdf">
+                </p>
+
+                <p>
+                    <label for="motivation">Motivation: </label>
+                    <textarea name="motivation" id="motivation" rows="4" cols="50"></textarea>
+                    <button type="button" popovertarget="bubble">&quest;</button>
+
+                <div id="bubble" popover>
+                    Explain why you want to join TechNova's summer internship program!
+                </div>
+                </p>
+
+                <p>
+                    <input type="hidden" name="source" value="Lab2">
+                </p>
+
+                <p>
+
+                    <button type="submit">Apply</button>
+                    <button type="submit" formnovalidate formaction="https://httpbin.org/anything">Save draft</button>
+
+                </p>
+            </form>
+        </section>
+
+
+        <section>
+
+            <details name="faq" open>
+                <summary>What is TechNova?</summary>
+                <p>TechNova is a leading technology company offering summer internships.</p>
+            </details>
+
+            <details name="faq">
+                <summary>Who can apply for the internship?</summary>
+                <p>Students looking for hands-on experience in software development and engineering.</p>
+            </details>
+
+            <details name="faq">
+                <summary>How are applications reviewed?</summary>
+                <p>Applications are reviewed on a rolling basis by department heads.</p>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>
