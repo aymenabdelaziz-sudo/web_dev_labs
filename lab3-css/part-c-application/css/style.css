@@ -103,6 +103,11 @@ button {
   min-height: 2.75rem;
 }
 
+a{
+  display: inline-block;
+  
+}
+
 header {
   margin-bottom: 20px;
 }
@@ -117,7 +122,9 @@ video {
 
 button:focus-visible,
 a:focus-visible,
-input:focus-visible {
+input:focus-visible,select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
   outline: 2px solid var(--btn-color);
   outline-offset: 2px;
 }
@@ -194,6 +201,7 @@ input[type="file"]::file-selector-button {
   font-size: 1rem;
   margin: 0;
   margin-left: 2px;
+  margin-right: 10px;
 }
 
 input[name="city"],select[name="specialty"]{
@@ -220,13 +228,16 @@ main label{
 }
 @media(prefers-color-scheme: dark){
     :root {
-    
-    --bg-color: #0f172a;        
-    --text-color: #f1f5f9;      
-    --btn-color: #31979b;       
-    --btn-txt-color: #1e293b;          
-    --btn-color-hover: #267679; 
-  }
+        --bg-color: #0f172a;
+        --text-color: #f1f5f9;
+        --btn-color: #267679;
+        --btn-txt-color: #ffffff;
+        --btn-color-hover: #52606d;
+    }
+
+    a{
+      color : skyblue ;
+    }
 }
 
 @media(min-width : 40em){
@@ -280,12 +291,31 @@ main label{
 
   main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "v a" 
+                          "i s";
+                      
+    align-self: start;
     gap: 5% ;
     padding-bottom: 80px;
   }
 
   h2{
     text-align: center;
+  }
+
+  main section:nth-child(1){
+    grid-area : v ;
+  }
+
+  main section:nth-child(2){
+    grid-area : a ;
+  }
+
+  main section:nth-child(3){
+    grid-area : i ;
+  }
+
+  main section:nth-child(4){
+    grid-area : s ;
   }
 }
