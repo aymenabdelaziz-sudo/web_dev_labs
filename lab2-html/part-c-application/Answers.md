@@ -9,4 +9,4 @@ Because the form includes a file upload control (`<input type="file">`) to attac
 To ensure cross-browser compatibility. Different web browsers support different video codecs and file containers (`.webm` vs. `.mp4`). The browser evaluates the `<source>` tags from top to bottom and plays the first format it supports.
 
 ### (d) Your Lighthouse score:
-- **Accessibility Score:** 94
+- **Accessibility Score:**  94
