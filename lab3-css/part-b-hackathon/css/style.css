@@ -1,3 +1,268 @@
-body{
-    background-color: yellow;
+:root {
+  --color-primary: #17324d;
+  --color-text: #1f2933;
+  --color-accent: #267679;
+  --color-muted: #52606d;
+  --color-accent-light: hsl(182 40% 94%);
+  --color-highlight: #f0b429;
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+  --radius: 8px;
+}
+body {
+  background-color: var(--color-bg);
+  min-width: 1280px;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+
+  top: 0;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  width: 100%;
+  background-color: var(--color-primary);
+  height: 5rem;
+  gap: 40rem;
+  z-index: 10;
+  justify-self: center;
+}
+
+header img {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+nav > ul {
+  margin-left: 0rem;
+}
+a {
+  text-decoration: none;
+  color: var(--color-accent-light);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-family: sans-serif;
+  color: var(--color-accent-light);
+  font-size: 1rem;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: 8px;
+}
+
+main {
+  display: grid;
+  justify-self: center;
+  width: min(100% - 2rem, 70rem);
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 200px 1fr;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+article,
+aside {
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background-color: var(--color-surface);
+}
+
+aside {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  aspect-ratio: 2/1;
+}
+
+article {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+article h1 {
+  color: var(--color-primary);
+  font-family: sans-serif;
+}
+
+.hackathonimage {
+  width: 100%;
+  object-fit: cover;
+  margin-left: 0;
+  height: 100%;
+  border-radius: var(--radius);
+  z-index: 0;
+}
+
+.imgcontainer {
+  margin-left: 0;
+  width: 90%;
+  position: relative;
+  display: inline-block;
+}
+
+.imgcontainer::after {
+  position: absolute;
+  content: "48H";
+  background-color: var(--color-highlight);
+  top: 10px;
+  right: 10px;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+h2 {
+  color: var(--color-primary);
+}
+table caption {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background-color: var(--color-accent-light);
+  border-bottom: 1px solid var(--color-accent-light);
+}
+
+thead th {
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: var(--color-primary);
+}
+
+table th {
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: none;
+}
+
+tfoot tr {
+  border-bottom: 1px solid var(--color-accent-light);
+}
+
+.prizes > ol > li {
+  margin-bottom: 5px;
+}
+
+ol li::marker {
+  color: var(--color-accent);
+}
+
+.member ul {
+  margin-bottom: 10px;
+}
+
+.member li {
+  margin-top: 10px;
+}
+
+blockquote {
+  background-color: var(--color-accent-light);
+  padding: 5px 15px;
+  border-left: 5px solid var(--color-accent);
+  width: 100%;
+  justify-self: center;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+blockquote + figcaption {
+  text-align: right;
+  color: grey;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+dt {
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+.btn {
+  color: var(--color-surface);
+  background-color: var(--color-accent);
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: background-color 0.5s linear;
+}
+
+a[href="register.html"] {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--color-muted);
+}
+
+aside h2 {
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 5px;
+}
+
+aside a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+aside li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+footer {
+  color: var(--color-text);
+  justify-self: center;
+}
+
+footer a {
+  color: var(--color-accent);
+  text-decoration: underline;
 }

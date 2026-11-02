@@ -1,3 +1,271 @@
-body{
-    background-color: yellow ;
+:root{
+    --bg-color : #e2e8f0 ;
+    --text-color : #17324d ;
+    --btn-color: #267679 ;
+    --btn-txt-color : #ffffff ;
+    --btn-color-hover : #52606d ;
+    
+    
+
+}
+body {
+  background-color: var(--bg-color);
+  justify-self: center;
+  width: min(calc(100% - 2rem), 64rem);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw + 1rem, 3rem);
+}
+
+header,
+header section {
+  justify-self: center;
+}
+.banner {
+  width: 100%;
+  border-radius: 10px;
+  justify-self: center;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+header,
+form,
+section,
+search {
+  width: 100%;
+}
+
+header form{
+  margin-bottom: 15px;
+}
+
+header h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+search {
+  font-size: 0;
+}
+
+search{
+  display: flex;
+
+}
+
+#searchlab {
+  display: block;
+  width: 25%;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--btn-txt-color);
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: background-color 0.5s linear;
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 2px;
+}
+
+search button{
+  flex : 0 1 auto ;
+}
+
+#search_section {
+  width: 75%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  
+  flex: 1;
+  font-size: 1rem;
+}
+
+a,
+input,
+summary,
+button {
+  min-height: 2.75rem;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  justify-self: center;
+  object-fit: cover;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--btn-color);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .btn:hover,
+  input[type="file"]::file-selector-button:hover {
+    background-color: var(--btn-color-hover);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  input[type="file"]::file-selector-button {
+    transition: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label[for="campaign"],
+label[for="places"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#places ~ span,
+#campaign ~ span {
+  margin-left: 20px;
+}
+
+#pannel {
+  margin-bottom: 30px;
+}
+
+#speciality {
+  height: 2rem;
+}
+
+label[for="upload"] {
+  margin-bottom: 15px;
+  display: block;
+}
+
+label[for="specialty"] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+select {
+  min-height: 2.75rem;
+  box-sizing: border-box;
+
+  padding: 8px 12px;
+}
+
+input[type="file"]::file-selector-button {
+  background-color: var(--btn-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--btn-txt-color);
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: background-color 0.5s linear;
+  font-size: 1rem;
+  margin: 0;
+  margin-left: 2px;
+}
+
+input[name="city"],select[name="specialty"]{
+  width: 100%;
+}
+
+select[name="specialty"]{
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+}
+
+label{
+  display: block;
+}
+
+main label{
+  margin-bottom: 15px;
+}
+@media(prefers-color-scheme: dark){
+    :root {
+    
+    --bg-color: #0f172a;        
+    --text-color: #f1f5f9;      
+    --btn-color: #31979b;       
+    --btn-txt-color: #1e293b;          
+    --btn-color-hover: #267679; 
+  }
+}
+
+@media(min-width : 40rem){
+
+  .titlesearch{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    
+    
+  }
+
+  
+
+  header form{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #searchlab{
+    
+    flex: 0 0 100px ;
+
+  }
+
+  main section:nth-child(3) form{
+    display: grid;
+    grid-template-columns : 200px 1fr ;
+    gap: 10px;
+    align-items: center;
+    
+  }
+
+  .formbuttons{
+    margin-top: 10px;
+    justify-self: end;
+  }
+
+  button[popovertarget="bubble"]{
+    display: block;
+    justify-self: end;
+    
+  }
+  
+
 }

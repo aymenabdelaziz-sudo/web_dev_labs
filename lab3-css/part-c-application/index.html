@@ -11,54 +11,69 @@
 
 <body>
     <header>
+
+        <div class="titlesearch">
+            <h1>TechNova</h1>
         <form action="https://httpbin.org/get" method="get">
-            <search>
-                <label for="search_section">Search: </label>
+            <label id="searchlab" for="search_section">Search: </label>
+            <search id="srch">
+                
                 <input id="search_section" type="search" name="q" placeholder="Search..." />
-                <button type="submit">Submit</button>
+                <button class="btn" type="submit">Submit</button>
             </search>
         </form>
-    </header>
+        </div>
+        
 
-    <main>
         <section>
             <picture>
-                <source media="(min-width:800px)" srcset="media/banner-1280.jpg" loading="lazy" />
-                <img src="media/banner-640.jpg" alt="banner with technova in bold and light blue stripe with a dark 
+                <source class="banner" media="(min-width:800px)" srcset="media/banner-1280.jpg" loading="lazy" />
+                <img class="banner" src="media/banner-640.jpg" alt="banner with technova in bold and light blue stripe with a dark 
                 blue background" loading="lazy" />
             </picture>
         </section>
+        
+    </header>
+
+    <main>
+        
 
         <section>
+            <h1>Presentation: </h1>
             <video controls poster="media/poster.jpg" preload="metadata">
                 <source src="media/presentation.mp4" type="video/mp4" />
                 <source src="media/presentation.webm" type="video/webm" />
                 <track kind="captions" src="caption-en.vtt" srclang="en" label="English" default />
-                 If you can't see the presentation
-                <a href="media/presentation.mp4" download>Click Here</a> to download
-                it
+                
             </video>
 
+            <p>If you can't see the presentation <a href="media/presentation.mp4" download>Click Here</a> to download
+                it</p> 
+                
 
         </section>
 
-        <section>
+        <section id="pannel">
+
+            <h1>Places: </h1>
             <p>
-                <label for="places">Places taken: </label>
-                <meter id="places" value="18" min="0" max="30">18 of 30 places taken</meter>18 of 30 places taken
+                <label for="places" >Places taken: </label>
+                <meter id="places" value="18" min="0" max="30"></meter><span>18 of 30 places taken</span>
                 
             </p>
 
             <p>
-                <label for="campaign">Campaign: 40% elapsed </label>
-                <progress id="campaign" value="40" min="0" max="100"></progress>40%
+                <label for="campaign" >Campaign:  </label>
+                <progress id="campaign" value="40" min="0" max="100"></progress><span>40% elapsed</span>
                  
             </p>
         </section>
 
         <section>
+
+            <h1>Informations:</h1>
             <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
-                <p>
+                
                     <label for="city">City: </label>
                     <input type="serach" name="city" list="city_list" id="city" />
                     <datalist id="city_list">
@@ -67,9 +82,9 @@
                         <option value="Constantine">Constantine</option>
                         <option value="Annaba">Annaba</option>
                     </datalist>
-                </p>
+                
 
-                <p>
+                
                     <label for="specialty">Specialty:</label>
                     <select id="specialty" name="specialty" required>
                         <option value="" disabled selected>Select a specialty...</option>
@@ -82,40 +97,48 @@
                             <option value="graphic">Graphic Design</option>
                         </optgroup>
                     </select>
-                </p>
+                
 
 
-                <p>
+                
                     <label for="upload">Upload your file (PDF only): </label>
-                    <input type="file" name="file" id="upload" accept=".pdf">
-                </p>
+                    <input  type="file" name="file" id="upload" accept=".pdf">
+                
 
-                <p>
+                
                     <label for="motivation">Motivation: </label>
                     <textarea name="motivation" id="motivation" rows="4" cols="50"></textarea>
-                    <button type="button" popovertarget="bubble">&quest;</button>
+                    
 
-                <div id="bubble" popover>
-                    Explain why you want to join TechNova's summer internship program!
-                </div>
-                </p>
+                
+                
 
                 <p>
                     <input type="hidden" name="source" value="Lab2">
                 </p>
 
-                <p>
+                
 
-                    <button type="submit">Apply</button>
-                    <button type="submit" formnovalidate formaction="https://httpbin.org/anything">Save draft</button>
+                    
 
-                </p>
+                
             </form>
+            <button class="btn" type="button" popovertarget="bubble">&quest;</button>
+
+            <div id="bubble" popover>
+                    Explain why you want to join TechNova's summer internship program!
+                </div>
+
+                <div class="formbuttons">
+                        <button class="btn" type="submit">Apply</button>
+                        <button class="btn" type="submit" formnovalidate formaction="https://httpbin.org/anything">Save draft</button>
+                </div>
         </section>
 
 
         <section>
 
+            <h1>About us: </h1>
             <details name="faq" open>
                 <summary>What is TechNova?</summary>
                 <p>TechNova is a leading technology company offering summer internships.</p>

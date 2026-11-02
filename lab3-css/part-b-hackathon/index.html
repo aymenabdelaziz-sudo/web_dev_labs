@@ -9,8 +9,10 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" alt="a logo in dark blue circle contains AI word in white" width="56px" height="56px">
-        
+        <div class="first">
+            <img src="images/logo.svg" alt="a logo in dark blue circle contains AI word in white" width="56px" height="56px">
+            <h1>ENSIA AI CLUB</h1>
+        </div>
         <nav>
             <ul>
             <li><a href="#home">Home</a></li>
@@ -23,16 +25,18 @@
     </header>
 
     <main>
-        <section id="home">
+       <article>
+         <section id="home">
             <h1>Hackathon 2026: 48 hours to build Smarters Cities</h1>
             <p>Published on <time datetime="2026-10-12">October 12,2026</time> by the <em>AI Club team</em></p>
 
-            <figure>
-                <img src="images/hackathon.svg" width="480px" height="240px" alt="an image of three connected laptop with 
+            <figure class="imgcontainer">
+                <img class="hackathonimage" src="images/hackathon.svg" width="480px" height="240px" alt="an image of three connected laptop with 
                 a blue back ground where a sentence in the bottom say Hackathon 2025, Main Hall">
                 <figcaption>
                     Last year, 24 teams competed in main hall
                 </figcaption>
+                
             </figure>
 
             <p>The <abbr title="Artificial Intelligence">Ai</abbr> Club invites all student to its annual hackathon. In teams of three to five, you will design
@@ -61,7 +65,7 @@
                 </tfoot>
             </table>
         </section>
-        <section>
+        <section class="prizes">
             <h2>Prizes</h2>
 
             <ol>
@@ -70,7 +74,7 @@
                 <li>Third place: online course vouchers</li>
             </ol>
         </section>
-        <section id="member">
+        <section id="member" class="member">
             <h2>Who can participate?</h2>
             <ul>
                 <li>All ENSIA students, from first to fifth year</li>
@@ -88,7 +92,7 @@
             </figure>
         </section>
 
-        <section>
+        <section >
             <h2>Practical information</h2>
 
             <dl>
@@ -102,10 +106,12 @@
                 <dd>Free (places are limited to 30 teams)</dd>
             </dl>
 
-            <a href="register.html">Register your team before November 6</a>
+            <a class="btn" href="register.html">Register your team before November 6</a>
         </section>
+       </article>
 
-        <section id="event">
+        <aside>
+            <section id="event">
             <h2>Related events</h2>
 
             <ul>
@@ -113,11 +119,12 @@
                 <li><a href="events/OpenDay.html">Robotics Club open day</a></li>
             </ul>
         </section>
+        </aside>
 
     </main>
 
     <footer id="contact">
-        <p>&copy; ENSIA AI CLUB &middot; &nbsp;<a href="mailto: aymen.abdelaziz@ensia.edu.dz">aymen.abdlaziz@ensia.edu.dz</a></p>
+        <p>&copy; 2026 ENSIA AI CLUB &middot; &nbsp;<a href="mailto: aymen.abdelaziz@ensia.edu.dz">aymen.abdlaziz@ensia.edu.dz</a></p>
     </footer>
 </body>
 </html>
